@@ -1,0 +1,45 @@
+#whychooseusImg {
+  background-image: url("/pix/bg.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+}
+@media (max-width: 640px) {
+  #whychooseusImg {
+    margin-top: 40px;
+  }
+  #choosesecparaM {
+    padding: 25px 25px 0px 25px;
+  }
+  #choosesecbtnM {
+    margin-left: 25px;
+    margin-top: -25px !important  ;
+  }
+  #choosesecheadingM {
+    padding-left: 25px;
+  }
+  #processstepsM {
+    margin: 20px;
+  }
+}
+// counter section
+.countersec {
+  width: 100%;
+  background: linear-gradient(45deg, #143086, #ef4444);
+  height: 500px;
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
+#Techicons {
+  background: linear-gradient(90deg, #143086, #ef4444);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+// .countersec {
+//   background: linear-gradient(45deg, #143086c6, #ef4444ad), url("/pix/bg.jpg");
+//   background-blend-mode: multiply;
+//   background-size: cover;
+//   width: 100%;
+//   height: 700px;
+//   /* Other styling properties as needed */
+// }
