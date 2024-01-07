@@ -4,15 +4,18 @@ function Team() {
   return (
     <>
       {/* our team */}
-      <section className="text-gray-600 body-font mb-32">
+      <section className="text-gray-600 body-font mt-24 mb-24">
         <div className="container px-5 mx-auto">
           <div className="flex flex-col text-center w-full mb-20">
-            <h1 className="font-semibold   text-blue-950 text-4xl text-center">
+            <h1
+              className="font-semibold text-blue-950 text-4xl text-center"
+              style={{ marginTop: "-32px", marginBottom: "-32px" }}
+            >
               Our
               <span className="text-red-500"> Experts</span>
             </h1>
           </div>
-          <div className="flex flex-wrap -m-4">
+          <div className="flex flex-wrap" style={{ marginBottom: "32px" }}>
             <div className="p-4 lg:w-1/4 md:w-1/2">
               <div className="h-full flex flex-col items-center text-center">
                 <img

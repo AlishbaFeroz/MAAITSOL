@@ -1,0 +1,24 @@
+#testimonialcontainer {
+  background: linear-gradient(90deg, #143086, #ef4444);
+  padding: 20px;
+  height: 620px;
+  overflow: hidden; //   border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#testimonialslide {
+  padding: 20px;
+  // background-color: #fff;
+  border-radius: 10px;
+  display: flex !important;
+  width: 100% !important;
+  margin: auto;
+  justify-content: space-evenly !important;
+}
+#radiobuttons {
+  display: flex;
+  justify-content: center !important;
+  margin-top: 10px;
+}
+
+/* Add any other styles as needed */

@@ -4,7 +4,7 @@ function BannerImg() {
   return (
     <>
       <div className={styles.bnrimg}>
-        <div className="flex justify-center h-screen items-center">
+        <div className="flex justify-center h-5/6 items-center">
           <div className="w-5/12 text-center">
             <h1 className="text-white text-4xl">
               <b>

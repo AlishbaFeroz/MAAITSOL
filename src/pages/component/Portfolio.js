@@ -439,9 +439,9 @@ const PortfolioSection = () => {
   const activeTabData = tabData.find((tab) => tab.name === activeTab);
 
   return (
-    <section className="">
+    <section>
       <div className="container mx-auto">
-        <h1 className="text-center mb-16 text-4xl text-blue-950 lg:mt-12">
+        <h1 className="text-center mb-12 text-4xl text-blue-950 lg:mt-24">
           <b>
             Our <span className="text-red-500">Portfolio</span>
           </b>
@@ -457,7 +457,7 @@ const PortfolioSection = () => {
           {tabData.map((tab) => (
             <button
               key={tab.name}
-              className={`py-2 px-4 border-b-4 ${
+              className={`py-2 px-4 hover:text-red-500 font-medium text-gray-800 border-b-4 ${
                 activeTab === tab.name
                   ? "border-b-blue-950"
                   : " border-transparent"
@@ -475,7 +475,14 @@ const PortfolioSection = () => {
             <div className="grid grid-cols-1 p-7 sm:grid-cols-2 lg:grid-cols-3 gap-8">
               {activeTabData.images.map((image, index) => (
                 <div key={index}>
-                  <img src={image} style={{ height: "270px", width: "100%" }} />
+                  <img
+                    src={image}
+                    style={{
+                      height: "270px",
+                      width: "100%",
+                      borderRadius: "20px",
+                    }}
+                  />
                 </div>
               ))}
             </div>

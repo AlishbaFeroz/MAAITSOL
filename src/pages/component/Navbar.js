@@ -101,7 +101,7 @@ function Navbar() {
             <li>
               <a
                 href="#"
-                className="text-gray-900 hover:text-blue-700 dark:text-white dark:hover:text-blue-500"
+                className="text-gray-900 hover:text-red-500 dark:text-white dark:hover:text-blue-500"
               >
                 Home
               </a>
@@ -109,7 +109,7 @@ function Navbar() {
             <li>
               <a
                 href="#"
-                className="text-gray-900 hover:text-blue-700 dark:text-white dark:hover:text-blue-500"
+                className="text-gray-900 hover:text-red-500 dark:text-white dark:hover:text-blue-500"
               >
                 About
               </a>
@@ -117,7 +117,7 @@ function Navbar() {
             <li>
               <a
                 href="#"
-                className="text-gray-900 hover:text-blue-700 dark:text-white dark:hover:text-blue-500"
+                className="text-gray-900 hover:text-red-500 dark:text-white dark:hover:text-blue-500"
               >
                 Services
               </a>
@@ -125,7 +125,7 @@ function Navbar() {
             <li>
               <a
                 href="#"
-                className="text-gray-900 hover:text-blue-700 dark:text-white dark:hover:text-blue-500"
+                className="text-gray-900 hover:text-red-500 dark:text-white dark:hover:text-blue-500"
               >
                 Portfolio
               </a>
@@ -133,7 +133,7 @@ function Navbar() {
             <li>
               <a
                 href="#"
-                className="text-gray-900 hover:text-blue-700 dark:text-white dark:hover:text-blue-500"
+                className="text-gray-900 hover:text-red-500 dark:text-white dark:hover:text-blue-500"
               >
                 Clients
               </a>
@@ -141,16 +141,16 @@ function Navbar() {
             <li>
               <a
                 href="#"
-                className="text-gray-900 hover:text-blue-700 dark:text-white dark:hover:text-blue-500"
+                className="text-gray-900 hover:text-red-500 dark:text-white dark:hover:text-blue-500"
               >
                 Contact
               </a>
             </li>
             <button className="bg-blue-900 p-3 rounded-full hover:bg-blue-950 transition delay-150 text-white">
-              Login
+              Book a call
             </button>
             <button className="bg-blue-900 p-3 rounded-full hover:bg-blue-950 transition delay-150 text-white">
-              Signin
+              Contact Us
             </button>
           </ul>
         </div>

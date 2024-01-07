@@ -9,14 +9,20 @@ import BannerImg from "./component/BannerImg";
 import styles from "../styles/index.module.scss";
 import PortfolioSection from "./component/Portfolio";
 import Team from "./component/team";
+import CounterSec from "./component/CounterSec";
+import Testimonial from "./component/Testimonial";
 export default function Home() {
   const [activeTab, setActiveTab] = useState("tab1");
-
+  // const linearGradientStyle = {
+  //   background: "linear-gradient(90deg, #143086, #ef4444)",
+  //   // add other styles as needed
+  // };
   const handleTabClick = (tabName) => {
     setActiveTab(tabName);
   };
   return (
     <>
+      {/* <div style={linearGradientStyle}> */}
       <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -256,17 +262,20 @@ export default function Home() {
         </div>
       </section>
       <PortfolioSection />
-
+      <CounterSec />
+      <Team />
+      <Testimonial />
+      {/* technologies section */}
       <section className="technologiesSection">
-        <div className="container mx-auto">
+        <div className="container mx-auto mb-14">
           <h1 className="font-bold text-blue-950 text-4xl text-center mt-24">
             We work on these <span className="text-red-500">technologies</span>
           </h1>
-          <div className="flex justify-center px-4 mx-auto mt-8">
+          <div className="flex justify-center px-4 mx-auto pt-2 pb-8 mt-8">
             <div>
               <div className="flex justify-center space-x-4">
                 <div
-                  className={`py-2 px-4 border-b-4 ${
+                  className={`py-2 px-4 border-b-4 hover:text-red-500 font-medium text-gray-800 ${
                     activeTab === "tab1"
                       ? "border-b-blue-950 cursor-pointer"
                       : "border-transparent cursor-pointer"
@@ -277,7 +286,7 @@ export default function Home() {
                 </div>
 
                 <button
-                  className={`py-2 px-4 border-b-4 ${
+                  className={`py-2 px-4 border-b-4 hover:text-red-500 font-medium text-gray-800 ${
                     activeTab === "tab2"
                       ? "border-b-blue-950 cursor-pointer"
                       : "border-transparent cursor-pointer"
@@ -288,7 +297,7 @@ export default function Home() {
                 </button>
 
                 <button
-                  className={`py-2 px-4 border-b-4 ${
+                  className={`py-2 px-4 border-b-4 hover:text-red-500 font-medium text-gray-800 ${
                     activeTab === "tab3"
                       ? "border-b-blue-950 cursor-pointer"
                       : "border-transparent cursor-pointer"
@@ -298,7 +307,7 @@ export default function Home() {
                   CMS
                 </button>
                 <button
-                  className={`py-2 px-4 border-b-4 ${
+                  className={`py-2 px-4 border-b-4 hover:text-red-500 font-medium text-gray-800 ${
                     activeTab === "tab4"
                       ? "border-b-blue-950 cursor-pointer"
                       : "border-transparent cursor-pointer"
@@ -308,7 +317,7 @@ export default function Home() {
                   Database
                 </button>
                 <button
-                  className={`py-2 px-4 border-b-4 ${
+                  className={`py-2 px-4 border-b-4 hover:text-red-500 font-medium text-gray-800 ${
                     activeTab === "tab5"
                       ? "border-b-blue-950 cursor-pointer"
                       : "border-transparent cursor-pointer"
@@ -493,50 +502,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-      {/* counter section */}
-      <section className={styles.countersec}>
-        <div className="container">
-          <h1 className="text-white text-4xl text-center pb-7 pt-24">
-            <b>Crafting Success Stories Beyond Expectations</b>
-          </h1>
-          <div className="grid grid-cols-1 lg:pl-32 lg:pr-32 lg:pt-10 p-20 sm:p-20 sm:grid-cols-2 lg:grid-cols-4 gap-20">
-            <div className="bg-blue-100 h-44 pt-10">
-              <h1 className="text-red-500 font-serif text-2xl text-center">
-                Our Projects
-              </h1>
-              <h3 className="text-blue-950 pt-3 font-semibold text-5xl text-center">
-                500+
-              </h3>
-            </div>
-            <div className="bg-blue-100 h-44 pt-10">
-              <h1 className="text-red-500 font-serif text-2xl text-center">
-                Happy Clients
-              </h1>
-              <h3 className="text-blue-950 pt-3 font-semibold text-5xl text-center">
-                470+
-              </h3>
-            </div>
-            <div className="bg-blue-100 h-44 pt-10">
-              <h1 className="text-red-500 font-serif text-2xl text-center">
-                Talented Team
-              </h1>
-              <h3 className="text-blue-950 pt-3 font-semibold text-5xl text-center">
-                50+
-              </h3>
-            </div>
-            <div className="bg-blue-100 h-44 pt-10">
-              <h1 className="text-red-500 font-serif text-2xl text-center">
-                working Hours
-              </h1>
-              <h3 className="text-blue-950 pt-3 font-semibold text-5xl text-center">
-                24
-              </h3>
-            </div>
-          </div>
-        </div>
-      </section>
-      <Team />
       <Footer />
+      {/* </div> */}
     </>
   );
 }
